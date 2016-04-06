@@ -1,0 +1,739 @@
+@media (max-width: 425px) {
+
+	body {
+	padding-top: 0px;
+	margin: 0px;
+	background-color: rgb(235,235,235);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300px;
+	max-width: 360px
+	}
+
+	.page {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+/* homepage css styling */
+
+	.header {
+		background-color: rgb(248,248,248);
+		height: 70px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.logo {
+		float: left;
+		left: 0px;
+		width:130px;
+	}
+
+	#logo-img {
+		width: 100px;
+		margin: 18px;
+	}
+
+	.nav {
+		float: right;
+		right: 0px;
+		width: 190px;
+		height: inherit;
+	}
+
+	.nav > ul > li.toggle > img {
+		height: 30px;
+	}
+
+	ul {
+		list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    display: block;
+	    height: inherit;
+	    width: inherit;
+	    margin-top: 20px;
+	    
+	}
+
+	.nav > ul > li:nth-child(1) {
+		background-image: url(../image/upload.png);
+		background-position: center top;
+		background-size: 20px 19px;
+		background-repeat: no-repeat;
+	}
+
+	.nav > ul > li:nth-child(2) {
+		background-image: url(../image/browse.png);
+		background-position: center top;
+		background-size:20px 19px ;
+		background-repeat: no-repeat;
+	}
+
+	.nav > ul > li:nth-child(3) {
+		background-image: url(../image/user.png);
+		background-position: center top;
+		background-size: 20px 19px;
+		background-repeat: no-repeat; 
+	}
+
+	.nav > ul > li {
+		display: inline;
+		float: left;
+		margin: auto 5px;
+		height: inherit;
+	}
+
+	.nav > ul > li > a {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		font-size: 10px;
+		font-weight: 300px;
+		padding-top: 18px;
+
+	}
+
+	.nav > ul > li > a:link {
+		color: rgb(69,69,69);
+	}
+
+	.intro {
+		height: 100px;
+		width: inherit;
+		position: relative;
+		text-align: center;
+		
+	}
+
+	div.intro > h1 {
+		color: rgb(64,64,64);
+		padding-left: 9px;
+		padding-right: 9px;
+	}
+
+	.intro::after {
+		content: '';
+		display: block;  
+		position: absolute;
+		left: 150px;
+		top: 100%;
+		width: 0;
+		height: 0;
+		border-top: 15px solid rgb(235,235,235);
+		border-right: 15px solid transparent;
+		border-bottom: 17px solid transparent;
+		border-left: 15px solid transparent;
+	}
+
+	input[type=button], input[type=submit], input[type=reset] {
+	    background-color: rgb(26,117,161);
+	    border: solid #fff 2px;
+	    border-radius: 8px;
+	    color: white;
+	    padding: 10px 42px;
+	    font-size: 20px;
+	    text-decoration: none;
+	    margin: 4px 59px;
+	    margin-bottom: 2.3em;
+	    cursor: pointer;
+	}
+
+	input[type=text], input[type="password"], input[type="email"], select {
+	    width: 100%;
+	    padding: 12px 20px;
+	    margin: 8px 0;
+	    display: inline-block;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+	    background-color: #fff;
+	}
+
+	/* arrows */
+
+	select.classic {
+	  background-image: linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(135deg, black 50%, transparent 50%), linear-gradient(to right, white, white);
+	  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+	  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+	  background-repeat: no-repeat;
+	}
+
+	select.classic:focus {
+	  background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, gray, gray);
+	  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+	  background-size: 5px 5px, 5px 5px, 2.5em 2.9em;
+	  background-repeat: no-repeat;
+	  border-color: grey;
+	  outline: 0;
+	}
+
+	/*select::after {
+		content: '';
+		display: block;  
+		position: absolute;
+		left: 160px;
+		top: 100%;
+		width: 0;
+		height: 0;
+		border-top: 15px solid green;
+		border-right: 15px solid transparent;
+		border-bottom: 17px solid transparent;
+		border-left: 15px solid transparent;
+
+	} */
+
+	.search-form {
+		background-color: rgb(251,251,251);
+		width: inherit;
+	}
+
+	.form-field {
+		padding: 10px 10px;
+		font-size: 20px;
+		color: rgb(65,65,65)
+	}
+
+	ul.job-nav {
+		list-style-type: none;
+		font-variant-caps: small-caps;
+		font-size: 2em;
+		background-color: rgb(127,127,127);
+		margin-top: 0px;
+		color: #fff;
+		position: relative;
+	}
+
+	ul.job-nav > li {
+		background-color: rgb(127,127,127);
+		border-bottom: solid #fff 2px;
+		padding: 10px;
+	}
+
+	/* Default icon formatting */
+	ul.job-nav > li > i {
+	  display: inline-block;
+	  font-style: normal;
+	  position: relative;
+	  float: right;
+	}
+
+	/* Additional formatting for arrow icon */
+	ul.job-nav > li > i.arrow {
+	    top: 2pt;
+	    width: 1em;
+	    height: 1.5em;
+	    background-image: url(../image/right.png);
+	    background-repeat: no-repeat;
+	    /* border-right: 0.2em solid white;
+	    border-top: 0.2em solid white;
+	    transform: rotate(45deg); */
+	}
+
+	ul.job-nav > li:last-child {
+		background-color: rgb(127,127,127);
+		border-bottom: solid #fff 0px;
+		padding: 10px;
+	}
+
+	ul.job-nav::after {
+		content: '';
+		display: block;  
+		position: absolute;
+		left: 140px;
+		top: 100%;
+		width: 0;
+		height: 0;
+		border-top: 15px solid rgb(122,122,122);
+		border-right: 15px solid transparent;
+		border-bottom: 17px solid transparent;
+		border-left: 15px solid transparent;
+	}
+
+	.footer {
+		background-color: rgb(255,255,255);
+		width: inherit;
+		height: 45px;
+		text-align: center;
+		padding-top: 15px;
+	}
+
+	.footer > ul {
+		list-style-type: none;
+		margin: 10px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		color: #000;
+		padding-bottom: 0px;
+		height: inherit;
+	}
+
+	.footer > ul > li {
+		display: inline;
+	}
+
+/* login css styling */
+/* ####   LOGIN PAGE DESIGNING ####
+   ##                            ##
+   ##                            ##
+   ###                         #### */
+
+   .login-page {
+   	background-color: rgb(248,248,248);
+   }
+	
+	.login-header {
+		background-color: rgb(248,248,248);
+		height: 70px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.login-logo {
+		float: left;
+		left: 0px;
+		width:100px;
+	}
+
+	#login-logo-img {
+		width: 100px;
+		margin: 18px;
+		margin-left: 5px;
+    	margin-right: 5px;
+	}
+
+	.login-nav {
+		float: right;
+		right: 0px;
+		width: 220px;
+		height: inherit;
+		text-align: center;
+	}
+
+	.login-nav > ul > li.login-toggle > img {
+		height: 30px;
+		width: 25px;
+	}
+
+	.login > ul {
+		list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    display: block;
+	    height: 50px;
+	    width: inherit;
+	    padding-top: 20px;
+	    
+	}
+
+	.login-nav > ul > li:nth-child(1) {
+		background-image: url(../image/search.png);
+		background-position: center top;
+		background-size: 20px 19px;
+		background-repeat: no-repeat;
+	}
+
+	.login-nav > ul > li:nth-child(2) {
+		background-image: url(../image/upload.png);
+		background-position: center top;
+		background-size: 20px 19px;
+		background-repeat: no-repeat;
+	}
+
+	.login-nav > ul > li:nth-child(3) {
+		background-image: url(../image/browse.png);
+		background-position: center top;
+		background-size:20px 19px ;
+		background-repeat: no-repeat;
+	}
+
+	.login-nav > ul > li:nth-child(4) {
+		background-image: url(../image/user.png);
+		background-position: center top;
+		background-size: 20px 19px;
+		background-repeat: no-repeat; 
+	}
+
+	.login-nav > ul > li {
+		display: inline;
+		float: left;
+		margin: auto 5px;
+		height: inherit;
+	}
+
+	.login-nav > ul > li > a {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		font-size: 10px;
+		font-weight: 300px;
+		padding-top: 18px;
+		line-height: 10px;
+
+	}
+
+	.login-nav > ul > li > a:link {
+		color: rgb(69,69,69);
+	}
+
+	.login-body {
+		width: inherit;
+	}
+
+	div.login-body > h3 {
+		color: rgb(64,64,64);
+		padding-left: 9px;
+		padding-right: 9px;
+		font-weight: lighter;
+	}
+
+	div.login-body > a.facebook > strong {
+		font-weight: bolder;
+	}
+
+	div.login-body > a.facebook {
+		background-color: rgb(0,83,159);
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+		font-weight: 400;
+		padding: 12px 22px;
+	    border: solid #fff 2px;
+	    border-radius: 25px;
+	    margin: 15px 37px;
+	    font-style: normal;
+	}
+
+	div.login-body > p.or-divider {
+		font-weight: lighter;
+	}
+
+	 div.login-body > p.or-divider > span {
+		border-style: inset;
+		display: inline-block;
+		margin-bottom: 3px;
+		width: 140px;
+    	border-width: 1px;
+	}
+
+	div.login-body > p.or-divider > span:nth-child(1){
+		margin-left: 5px;
+	}
+
+	div.login-body > form.login-form > label {
+		font-weight: lighter;
+		font-size: 1.2em;
+		color: rgb(64,64,64);
+		margin-left: 10px;
+		margin-bottom: 2px;
+	}
+
+	div.login-body > form.login-form > input[type="email"], div.login-body > form.login-form > input[type="password"] {
+		display: block;
+		margin-bottom: 12px;
+		height: 30px;
+		width: 290px;
+		margin-left: 10px;
+		background-color: rgb(253,251,252);
+		font-size: 17px;
+	}
+
+	div.login-body > form.login-form > a.forgot-password {
+		color: rgb(29,117,163);
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 19px;
+		margin-left: 10px;
+	}
+
+	div.login-body > form.login-form > hr.line, div.login-body > hr.line {
+		width: 300px;
+		margin: 12px;
+	}
+
+	div.login-body > form.login-form > input[type="submit"] {
+		width: 300px;
+		margin: 0;
+		padding: 7px 0;
+		margin-left: 10px;
+		border: solid #fff 2px;
+		border-radius: 0px;
+	}
+
+	div.login-body > a.sign-up {
+		background-color: rgb(64,64,64);
+		display: block;
+		margin-bottom: 12px;
+		height: 28px;
+		padding-top: 12px;
+		width: 294px;
+		margin-left: 10px;
+		font-size: 17px;
+		text-align: center;
+		text-decoration: none;
+		color: #fff;
+		border: solid #fff 2px;
+	}
+
+	div.flight {
+		position: relative;
+		background-color: rgb(129,129,129);
+		height: 3px;
+		margin-top: 4.4em;
+	}
+
+	div.flight::after {
+		content: " ";
+		display: block;
+		position: absolute;
+		left: 149px;
+		top: 100%;
+		width: 0;
+		height: 0;
+		border-top: 15px solid rgb(127,127,127);
+		border-right: 15px solid transparent;
+		border-bottom: 17px solid transparent;
+		border-left: 15px solid transparent;
+	}
+
+	footer.login-footer {
+		background-color: rgb(248,248,248);
+		width: inherit;
+		text-align: center;
+		padding-top: 15px;
+	}
+
+	footer.login-footer > ul {
+		list-style-type: none;
+		margin: 10px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		color: #000;
+		padding-bottom: 0px;
+		height: inherit;
+	}
+
+	.login-footer > ul > li {
+		display: inline;
+	}
+
+/* upload cv css styling */
+/* ####   UPLOAD CV PAGE DESIGNING ####
+   ##                            ##
+   ##                            ##
+   ###                         #### */
+
+   .upload-page {
+   	background-color: rgb(248,248,248);
+   }
+	
+	.upload-header {
+		background-color: rgb(248,248,248);
+		height: 70px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.upload-logo {
+		float: left;
+		left: 0px;
+		width:100px;
+	}
+
+	#upload-logo-img {
+		width: 100px;
+		margin: 18px;
+		margin-left: 5px;
+    	margin-right: 5px;
+	}
+
+	.upload-nav {
+		float: right;
+		right: 0px;
+		width: 220px;
+		height: inherit;
+		text-align: center;
+	}
+
+	.upload-nav > ul > li.upload-toggle > img {
+		height: 30px;
+		width: 25px;
+	}
+
+	.upload > ul {
+		list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    display: block;
+	    height: 50px;
+	    width: inherit;
+	    padding-top: 20px;
+	    
+	}
+
+	.upload-nav > ul > li:nth-child(1) {
+		background-image: url(../image/search.png);
+		background-position: center top;
+		background-size: 20px 19px;
+		background-repeat: no-repeat;
+	}
+
+	.upload-nav > ul > li:nth-child(2) {
+		background-image: url(../image/upload.png);
+		background-position: center top;
+		background-size: 20px 19px;
+		background-repeat: no-repeat;
+	}
+
+	.upload-nav > ul > li:nth-child(3) {
+		background-image: url(../image/browse.png);
+		background-position: center top;
+		background-size:20px 19px ;
+		background-repeat: no-repeat;
+	}
+
+	.upload-nav > ul > li:nth-child(4) {
+		background-image: url(../image/user.png);
+		background-position: center top;
+		background-size: 20px 19px;
+		background-repeat: no-repeat; 
+	}
+
+	.upload-nav > ul > li {
+		display: inline;
+		float: left;
+		margin: auto 5px;
+		height: inherit;
+	}
+
+	.upload-nav > ul > li > a {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		font-size: 10px;
+		font-weight: 300px;
+		padding-top: 18px;
+		line-height: 10px;
+
+	}
+
+	.upload-nav > ul > li > a:link {
+		color: rgb(69,69,69);
+	}
+
+	.upload-body {
+		width: inherit;
+		padding-left: 10px;
+	}
+
+	div.upload-body > h3 {
+		margin-bottom: 2px;
+		color: rgb(64,64,64);
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	div.upload-body > p.head-desc {
+		margin-top: 4px;
+		color: rgb(25,118,161);
+		font-size: 0.8em;
+	}
+
+	div.upload-body > h4 {
+		color: rgb(64,64,64);
+		text-align: center;
+		font-size: 1.3em;
+		margin: 12px 0;
+		margin-bottom: 0;
+		font-weight: lighter;
+	}
+
+	div.upload-body > form.upload-form > h6 {
+		font-variant: small-caps;
+		color: rgb(64,64,64);
+		margin: 12px 0;
+		margin-top: 0;
+		margin-bottom: 2px;
+		font-size: 1.7em;
+		font-weight: lighter;
+	}
+
+	div.upload-body > form.upload-form > input[type="file"] {
+		margin: 10px 1px;
+		width: inherit;
+		height: 30px;
+		color: rgb(64,64,64);
+		font-size: 15px;
+		align-items: stretch;
+	}
+
+	div.upload-body > form.upload-form > hr.line {
+		width: 290px;
+		margin:2px 0;
+	}
+
+	div.upload-body > form.upload-form > label {
+		display: block;
+		color: rgb(64,64,64);
+	}
+
+	div.upload-body > form.upload-form > [for="name"] {
+		margin-top: 13px;
+	}
+
+	div.upload-body > form.upload-form > input[type="email"], div.upload-body > form.upload-form > input[type="text"], 
+	div.upload-body > form.upload-form > input[type="password"], div.upload-body > form.upload-form > select {
+		background-color: rgb(253,251,252);
+		width: 295px;
+		height: 35px;
+		border: solid gray 2px;
+		border-radius: 0;
+		font-size: 1.6em;
+		color: rgb(125,123,124);
+		padding: 2px 9px;
+	}
+
+	div.upload-body > form.upload-form > p {
+		color: rgb(64,64,64);
+		font-size: 0.7em;
+		margin-left: 5px;
+	}
+
+	div.upload-body > form.upload-form > p > a {
+		color: inherit;
+	}
+
+	div.upload-body > form.upload-form > input[type="submit"] {
+		border-radius: 0;
+		margin: 0;
+		height: 45px;
+		width: 295px;
+		text-align: center;
+	}
+
+	div.upload-body + div.flight {
+		margin-top: 30px;
+	}
+
+   footer.upload-footer {
+		background-color: rgb(248,248,248);
+		width: inherit;
+		text-align: center;
+		padding-top: 15px;
+	}
+
+	footer.upload-footer > ul {
+		list-style-type: none;
+		margin: 10px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		color: #000;
+		padding-bottom: 0px;
+		height: inherit;
+	}
+
+	.upload-footer > ul > li {
+		display: inline;
+	}
+
+}
